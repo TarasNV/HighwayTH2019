@@ -12,10 +12,7 @@ import java.util.Scanner;
 public class AkinatorApp {
 
     /**
-     * Test scenario:
-     * - Go to https://ru.akinator.com/
-     * - Click Play button
-     * - Find and output answer button
+     * Main class for Akinator Condole app
      */
 
     public static void main(String[] args) throws InterruptedException {
@@ -28,7 +25,6 @@ public class AkinatorApp {
         int i = 1;
 
         do {
-
             WebDriverWait wait = new WebDriverWait(driver, 120);
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@class='question-number'][text()='" + i + "']")));
 
@@ -81,8 +77,7 @@ public class AkinatorApp {
 
             } while (checkAnswer == false);
 
-
-            Thread.sleep(3000);
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@id='div-overlay']/img")));
 
             List<WebElement> answersList = driver.findElements(By.xpath("//div[@class='database-selection selector dialog-box']/ul/li"));
             if (answersList.size() == 0){
@@ -91,15 +86,12 @@ public class AkinatorApp {
             else {
                 i++;
             }
-
         }
         while (true);
         String proposalTitle = driver.findElement(By.xpath("//span[@class = 'proposal-title']")).getText();
         System.out.println("Proposal name: " + proposalTitle);
         driver.quit();
     }
-
-
 }
 
 
