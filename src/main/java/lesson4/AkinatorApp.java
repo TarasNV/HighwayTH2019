@@ -82,10 +82,7 @@ public class AkinatorApp {
             } while (checkAnswer == false);
 
 
-            //Thread.sleep(5000);
-
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='row row_main']")));
-            ////div[@class='row row_main']
+            Thread.sleep(3000);
 
             List<WebElement> answersList = driver.findElements(By.xpath("//div[@class='database-selection selector dialog-box']/ul/li"));
             if (answersList.size() == 0){
