@@ -111,6 +111,9 @@ public class Lesson4Practice {
         if (nameFirst.equals(nameSecond)) {
             System.out.println("These people are namesakes.");
         }
+        else {
+            System.out.println("These people has different names.");
+        }
     }
 
     /**
