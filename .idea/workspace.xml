@@ -1,47 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9da3913a-c3e2-43b0-830a-8a5fdb3c36e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HighwayTH2019.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/CurrencyExchange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/BrowserFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/Lesson5Practice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/ArrayMinMax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/ArrayToString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/ArraysClassExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/ArraysExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/ArraysLoopExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/IncrementExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/HighwayTH2019.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson1/GoogleSearchHelloWorld.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson1/HelloUserConsoleInput.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson1/HelloWorld.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson1/Lesson1Hometask.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson1/SeleniumCheck.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson2/DatatypeSamples.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson2/HomeTask2_3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson2/HomeTask2_4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson2/VariablesExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson3/BrowserNavigation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson3/CinemaHallSeats.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson3/ShawshankRedemptionInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson3/TestNGExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson4/AkinatorApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson4/BreakExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson4/ForExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson4/Lesson4Practice.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson4/SwitchExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson4/WhileExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson5/BrowserFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson5/Lesson5Practice.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/HighwayTH2019.kotlin_module" afterDir="false" />
+    <list default="true" id="9da3913a-c3e2-43b0-830a-8a5fdb3c36e8" name="Default Changelist" comment="Completed CinemaHallSeats class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/ArraySortingHomework.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ArraySortingTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson3/CinemaHallSeats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson3/CinemaHallSeats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lesson3/CinemaHallSeats.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson3/CinemaHallSeats.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lesson3/CurrencyExchange.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson3/CurrencyExchange.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,24 +19,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lesson6/TicTacToeHomework.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="283" column="44" selection-start-line="283" selection-start-column="27" selection-end-line="283" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lesson3/CurrencyExchange.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TicTacToeTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-112">
-              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5135#5136#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lesson1/Lesson1Hometask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="107" />
+            <state relative-caret-position="287">
+              <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,10 +44,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lesson3/CinemaHallSeats.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ArraySortingTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-512">
-              <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="646">
+              <caret line="44" column="93" selection-start-line="44" selection-start-column="93" selection-end-line="44" selection-end-column="93" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,10 +56,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lesson3/ShawshankRedemptionInfo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lesson6/ArraySortingHomework.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="54" />
+            <state relative-caret-position="425">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,13 +68,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Math.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lesson1/HelloUserConsoleInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5916">
-              <caret line="398" column="25" selection-start-line="398" selection-start-column="25" selection-end-line="398" selection-end-column="38" />
+            <state relative-caret-position="85">
+              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
               <folding>
-                <element signature="e#18056#18057#0" expanded="true" />
-                <element signature="e#18138#18139#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,7 +119,6 @@
         <option value="$PROJECT_DIR$/src/main/java/lesson5/BrowserFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/lesson5/Lesson5Practice.java" />
         <option value="$PROJECT_DIR$/src/main/java/lesson4/Lesson4Practice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lesson3/CinemaHallSeats.java" />
         <option value="$PROJECT_DIR$/src/main/java/lesson6/IncrementExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/lesson6/ArraysExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/lesson6/ArraysLoopExample.java" />
@@ -164,6 +127,16 @@
         <option value="$PROJECT_DIR$/src/main/java/lesson6/BubbleSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/lesson6/ArraysClassExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/lesson3/CurrencyExchange.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lesson3/CinemaHallSeats.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lesson7/StringIsImmutable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lesson7/StringCast.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lesson7/Box.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lesson7/MainForBox.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lesson7/PolindromCheck.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ArraySortingTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lesson6/ArraySortingHomework.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lesson6/TicTacToeHomework.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TicTacToeTests.java" />
       </list>
     </option>
   </component>
@@ -179,6 +152,10 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="HwTH2019" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
@@ -186,10 +163,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1050" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -198,6 +175,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,7 +223,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson3" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HighwayTH2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HighwayTH2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson7" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HighwayTH2019" type="b2602c69:ProjectViewProjectNode" />
@@ -253,17 +239,27 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HighwayTH2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HighwayTH2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555243522442" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pdffiller-tests_v2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557234993482" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -277,9 +273,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.CurrencyExchange.cyrrencyInfo">
-    <configuration name="ArrayMinMax" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson6.ArrayMinMax" />
+  <component name="RunManager" selected="Application.TicTacToeHomework">
+    <configuration name="TicTacToeHomework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson6.TicTacToeHomework" />
       <module name="HighwayTH2019" />
       <extension name="coverage">
         <pattern>
@@ -291,56 +287,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayToString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson6.ArrayToString" />
+    <configuration name="TicTacToeTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HighwayTH2019" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TicTacToeTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArraysClassExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson6.ArraysClassExample" />
+    <configuration name="TicTacToeTests.checkGameResultD1Tests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HighwayTH2019" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TicTacToeTests" />
+      <option name="METHOD_NAME" value="checkGameResultD1Tests" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson6.BubbleSort" />
+    <configuration name="TicTacToeTests.checkGameResultD2Tests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HighwayTH2019" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TicTacToeTests" />
+      <option name="METHOD_NAME" value="checkGameResultD2Tests" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CurrencyExchange.cyrrencyInfo" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TicTacToeTests.checkGameResultLine1Tests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HighwayTH2019" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lesson3" />
-      <option name="MAIN_CLASS_NAME" value="lesson3.CurrencyExchange" />
-      <option name="METHOD_NAME" value="cyrrencyInfo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TicTacToeTests" />
+      <option name="METHOD_NAME" value="checkGameResultLine1Tests" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -350,11 +336,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CurrencyExchange.cyrrencyInfo" />
-        <item itemvalue="Application.ArraysClassExample" />
-        <item itemvalue="Application.BubbleSort" />
-        <item itemvalue="Application.ArrayToString" />
-        <item itemvalue="Application.ArrayMinMax" />
+        <item itemvalue="Application.TicTacToeHomework" />
+        <item itemvalue="TestNG.TicTacToeTests" />
+        <item itemvalue="TestNG.TicTacToeTests.checkGameResultD2Tests" />
+        <item itemvalue="TestNG.TicTacToeTests.checkGameResultD1Tests" />
+        <item itemvalue="TestNG.TicTacToeTests.checkGameResultLine1Tests" />
       </list>
     </recent_temporary>
   </component>
@@ -408,42 +394,41 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CurrencyExchange_cyrrencyInfo - 2019.04.14 at 13h 21m 17s.xml">
-      <configuration name="CurrencyExchange.cyrrencyInfo" configurationId="TestNG" />
+    <history-entry file="TicTacToeTests - 2019.04.28 at 17h 02m 52s.xml">
+      <configuration name="TicTacToeTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CurrencyExchange_cyrrencyInfo - 2019.04.14 at 14h 04m 34s.xml">
-      <configuration name="CurrencyExchange.cyrrencyInfo" configurationId="TestNG" />
+    <history-entry file="TicTacToeTests - 2019.04.28 at 17h 03m 32s.xml">
+      <configuration name="TicTacToeTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CurrencyExchange_cyrrencyInfo - 2019.04.14 at 14h 09m 44s.xml">
-      <configuration name="CurrencyExchange.cyrrencyInfo" configurationId="TestNG" />
+    <history-entry file="TicTacToeTests - 2019.04.28 at 17h 04m 19s.xml">
+      <configuration name="TicTacToeTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CurrencyExchange_cyrrencyInfo - 2019.04.14 at 14h 11m 15s.xml">
-      <configuration name="CurrencyExchange.cyrrencyInfo" configurationId="TestNG" />
+    <history-entry file="TicTacToeTests - 2019.04.28 at 17h 13m 39s.xml">
+      <configuration name="TicTacToeTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CurrencyExchange_cyrrencyInfo - 2019.04.14 at 14h 20m 22s.xml">
-      <configuration name="CurrencyExchange.cyrrencyInfo" configurationId="TestNG" />
+    <history-entry file="TicTacToeTests - 2019.04.28 at 17h 15m 49s.xml">
+      <configuration name="TicTacToeTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CurrencyExchange_cyrrencyInfo - 2019.04.14 at 14h 22m 14s.xml">
-      <configuration name="CurrencyExchange.cyrrencyInfo" configurationId="TestNG" />
+    <history-entry file="TicTacToeTests - 2019.04.28 at 17h 16m 08s.xml">
+      <configuration name="TicTacToeTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CurrencyExchange_cyrrencyInfo - 2019.04.14 at 14h 23m 58s.xml">
-      <configuration name="CurrencyExchange.cyrrencyInfo" configurationId="TestNG" />
+    <history-entry file="TicTacToeTests - 2019.04.28 at 17h 16m 21s.xml">
+      <configuration name="TicTacToeTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CurrencyExchange_cyrrencyInfo - 2019.04.14 at 14h 26m 08s.xml">
-      <configuration name="CurrencyExchange.cyrrencyInfo" configurationId="TestNG" />
+    <history-entry file="TicTacToeTests - 2019.04.28 at 17h 16m 30s.xml">
+      <configuration name="TicTacToeTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CurrencyExchange_cyrrencyInfo - 2019.04.14 at 14h 29m 57s.xml">
-      <configuration name="CurrencyExchange.cyrrencyInfo" configurationId="TestNG" />
+    <history-entry file="TicTacToeTests_checkGameResultD2Tests - 2019.04.28 at 17h 27m 23s.xml">
+      <configuration name="TicTacToeTests.checkGameResultD2Tests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CurrencyExchange_cyrrencyInfo - 2019.04.14 at 14h 57m 29s.xml">
-      <configuration name="CurrencyExchange.cyrrencyInfo" configurationId="TestNG" />
+    <history-entry file="TicTacToeTests - 2019.04.28 at 17h 27m 30s.xml">
+      <configuration name="TicTacToeTests" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15436241" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16577181" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -453,20 +438,20 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.07223796" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.15155807" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932885" weight="0.2703739" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" weight="0.39943343" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.21073826" />
+      <window_info active="true" anchor="right" id="Maven" order="4" visible="true" weight="0.21073826" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -501,13 +486,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/FacebookLoginPage.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lesson2/DatatypeSamples.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -568,23 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lesson1/HelloUserConsoleInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lesson2/VariablesExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -673,17 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5916">
-          <caret line="398" column="25" selection-start-line="398" selection-start-column="25" selection-end-line="398" selection-end-column="38" />
-          <folding>
-            <element signature="e#18056#18057#0" expanded="true" />
-            <element signature="e#18138#18139#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lesson6/ArraysClassExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -705,40 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lesson3/CinemaHallSeats.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-512">
-          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lesson3/ShawshankRedemptionInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lesson2/HomeTask2_4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lesson2/HomeTask2_3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -746,9 +662,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lesson3/CurrencyExchange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5106#5107#0" expanded="true" />
+            <element signature="e#5135#5136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lesson1/Lesson1Hometask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
+        <state relative-caret-position="731">
           <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="107" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -756,16 +684,223 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lesson3/CurrencyExchange.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lesson7/MainForBox.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/lesson7/Box.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5135#5136#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lesson3/ShawshankRedemptionInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5916">
+          <caret line="398" column="25" selection-start-line="398" selection-start-column="25" selection-end-line="398" selection-end-column="38" />
+          <folding>
+            <element signature="e#18056#18057#0" expanded="true" />
+            <element signature="e#18138#18139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lesson3/CinemaHallSeats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lesson7/PolindromCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lesson7/StringIsImmutable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lesson2/VariablesExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lesson2/HomeTask2_4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lesson2/HomeTask2_3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lesson2/DatatypeSamples.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lesson7/StringCast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lesson6/TicTacToeHomework.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="283" column="44" selection-start-line="283" selection-start-column="27" selection-end-line="283" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ArraySortingTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="44" column="93" selection-start-line="44" selection-start-column="93" selection-end-line="44" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lesson6/ArraySortingHomework.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lesson1/HelloUserConsoleInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TicTacToeTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>HighwayTH2019</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.beust:jcommander:1.72</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

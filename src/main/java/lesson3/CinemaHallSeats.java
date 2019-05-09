@@ -38,6 +38,9 @@ public class CinemaHallSeats {
         WebDriverWait wait = new WebDriverWait(driver, 60);
         driver.get("http://liniakino.com/showtimes/aladdin/");
 
+        WebElement closePopupButton = driver.findElement(By.cssSelector("#closeButton"));
+        closePopupButton.click();
+
         WebElement damboSessionLink = driver.findElement(By.xpath("//a[text()='Дамбо']/../..//div[@class='day-block showtime-day'][1]//li[1]/a"));
         damboSessionLink.click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe")));
@@ -55,8 +58,6 @@ public class CinemaHallSeats {
         System.out.println("Percent of free seats: " + (new DecimalFormat("##.##").format((double)((listOfSeats.size() - occupiedSeatsList.size())*100)/(double)listOfSeats.size())));
 
     }
-
-
 
     @AfterTest
     public void tearDown(){
