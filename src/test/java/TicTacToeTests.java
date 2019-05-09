@@ -95,6 +95,4 @@ public class TicTacToeTests {
         Assert.assertEquals(resultActual, resultExpected, "Incorrect result.");
     }
 
-    @Test
-    public static void
 }
