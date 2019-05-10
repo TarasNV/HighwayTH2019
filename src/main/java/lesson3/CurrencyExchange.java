@@ -2,10 +2,8 @@ package lesson3;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -29,7 +27,7 @@ public class CurrencyExchange {
         privatCurrency = privatCurrency.replace(" / ", " ");
         String[] values = privatCurrency.split(" ");
         double privatBuyUSD = Double.parseDouble(values[0]);
-        double privatSellUSD = Double.parseDouble(values[1]);System.out.println("Privat buy course: " + privatBuyUSD + "\nPrivat sell course: " + privatSellUSD);
+        double privatSellUSD = Double.parseDouble(values[1]);
 
         //collect currency values from Ukrsib Bank
         driver.get("https://my.ukrsibbank.com/ru/personal/operations/currency_exchange/");

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9da3913a-c3e2-43b0-830a-8a5fdb3c36e8" name="Default Changelist" comment="Completed CinemaHallSeats class">
-      <change beforePath="$PROJECT_DIR$/src/test/java/TicTacToeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TicTacToeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson3/CurrencyExchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson3/CurrencyExchange.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,14 +76,28 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lesson7/CountAInStringHomework.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            <state relative-caret-position="136">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#428#437#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lesson3/CurrencyExchange.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#5106#5107#0" expanded="true" />
+                <element signature="e#5135#5136#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -160,7 +175,6 @@
         <option value="$PROJECT_DIR$/src/main/java/lesson6/ArrayToString.java" />
         <option value="$PROJECT_DIR$/src/main/java/lesson6/BubbleSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/lesson6/ArraysClassExample.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lesson3/CurrencyExchange.java" />
         <option value="$PROJECT_DIR$/src/main/java/lesson3/CinemaHallSeats.java" />
         <option value="$PROJECT_DIR$/src/main/java/lesson7/StringIsImmutable.java" />
         <option value="$PROJECT_DIR$/src/main/java/lesson7/StringCast.java" />
@@ -172,6 +186,7 @@
         <option value="$PROJECT_DIR$/src/main/java/lesson6/TicTacToeHomework.java" />
         <option value="$PROJECT_DIR$/src/test/java/TicTacToeTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/lesson7/CountAInStringHomework.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lesson3/CurrencyExchange.java" />
       </list>
     </option>
   </component>
@@ -233,6 +248,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HighwayTH2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HighwayTH2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lesson6" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -274,7 +297,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CountAInStringHomework">
+  <component name="RunManager" selected="TestNG.CurrencyExchange.cyrrencyInfo">
     <configuration name="CountAInStringHomework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson7.CountAInStringHomework" />
       <module name="HwTH2019" />
@@ -301,23 +324,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicTacToeTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HighwayTH2019" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TicTacToeTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+    <configuration name="CurrencyExchange.cyrrencyInfo" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HwTH2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson3" />
+      <option name="MAIN_CLASS_NAME" value="lesson3.CurrencyExchange" />
+      <option name="METHOD_NAME" value="cyrrencyInfo" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicTacToeTests.checkGameResultD1Tests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TicTacToeTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HighwayTH2019" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TicTacToeTests" />
-      <option name="METHOD_NAME" value="checkGameResultD1Tests" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -338,11 +367,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CurrencyExchange.cyrrencyInfo" />
         <item itemvalue="Application.CountAInStringHomework" />
         <item itemvalue="Application.TicTacToeHomework" />
         <item itemvalue="TestNG.TicTacToeTests" />
         <item itemvalue="TestNG.TicTacToeTests.checkGameResultD2Tests" />
-        <item itemvalue="TestNG.TicTacToeTests.checkGameResultD1Tests" />
       </list>
     </recent_temporary>
   </component>
@@ -396,9 +425,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TicTacToeTests - 2019.04.28 at 17h 02m 52s.xml">
-      <configuration name="TicTacToeTests" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TicTacToeTests - 2019.04.28 at 17h 03m 32s.xml">
       <configuration name="TicTacToeTests" configurationId="TestNG" />
     </history-entry>
@@ -426,6 +452,9 @@
     <history-entry file="TicTacToeTests - 2019.04.28 at 17h 27m 30s.xml">
       <configuration name="TicTacToeTests" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="CurrencyExchange_cyrrencyInfo - 2019.05.10 at 12h 00m 35s.xml">
+      <configuration name="CurrencyExchange.cyrrencyInfo" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -441,7 +470,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.398017" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.398017" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932885" weight="0.2703739" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -454,7 +483,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.21073826" />
+      <window_info active="true" anchor="right" id="Maven" order="4" visible="true" weight="0.21073826" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -658,18 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lesson3/CurrencyExchange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5106#5107#0" expanded="true" />
-            <element signature="e#5135#5136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lesson1/Lesson1Hometask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
@@ -849,11 +866,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lesson7/CountAInStringHomework.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        <state relative-caret-position="136">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#428#437#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lesson3/CurrencyExchange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5106#5107#0" expanded="true" />
+            <element signature="e#5135#5136#0" expanded="true" />
           </folding>
         </state>
       </provider>
