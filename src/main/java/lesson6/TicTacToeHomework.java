@@ -1,6 +1,5 @@
 package lesson6;
 
-import java.lang.reflect.Array;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -13,7 +12,8 @@ public class TicTacToeHomework {
                 ComputerVsComputer();
                 break;
             case 2 :
-                HumanVsComputer();
+                //int modeHumanComputer = selectModeHumanComputer();
+                HumanVsComputer(selectModeHumanComputer());
                 break;
             case 3 :
                 HumanVsHuman();
@@ -34,24 +34,25 @@ public class TicTacToeHomework {
         String teamOne = "X";
         String teamTwo = "O";
         String result = "";
-        do {
+        while (result.equals("")) {
             System.out.println("X turn:");
-            oneComputerRandomTurn(board, teamOne);
+            board = oneComputerRandomTurn(board, teamOne);
+            printBoard(board);
             freeCells--;
             result = checkGameResult(board, freeCells);
             if (result.equals("")) {
                 System.out.println("O turn:");
-                oneComputerRandomTurn(board, teamTwo);
+                board = oneComputerRandomTurn(board, teamTwo);
+                printBoard(board);
                 freeCells--;
                 result = checkGameResult(board, freeCells);
             }
         }
-        while (result.equals(""));
         System.out.println(result);
 
     }
 
-    public static void HumanVsComputer() {
+    public static void HumanVsComputer(int mode) {
         Random random = new Random();
         String[][] board = initialiseBoard();
         printBoard(board);
@@ -64,12 +65,18 @@ public class TicTacToeHomework {
             System.out.println("Human starts...");
             do {
                 System.out.println("X turn:");
-                oneHumanTurn(board, teamOne);
+                board = oneHumanTurn(board, teamOne);
+                printBoard(board);
                 freeCells--;
                 result = checkGameResult(board, freeCells);
                 if (result.equals("")) {
                     System.out.println("O turn:");
-                    oneComputerRandomTurn(board, teamTwo);
+                    if (mode == 1) {
+                        board = oneComputerRandomTurn(board, teamTwo);
+                    } else if (mode == 2) {
+                        board = oneComputerStrongTurn(board, teamTwo);
+                    }
+                    printBoard(board);
                     freeCells--;
                     result = checkGameResult(board, freeCells);
                 }
@@ -81,12 +88,18 @@ public class TicTacToeHomework {
             System.out.println("Computer starts...");
             do {
                 System.out.println("X turn:");
-                oneComputerRandomTurn(board, teamOne);
+                if (mode == 1) {
+                    board = oneComputerRandomTurn(board, teamOne);
+                } else if (mode == 2) {
+                    board = oneComputerStrongTurn(board, teamOne);
+                }
+                printBoard(board);
                 freeCells--;
                 result = checkGameResult(board, freeCells);
                 if (result.equals("")) {
                     System.out.println("O turn:");
-                    oneHumanTurn(board, teamTwo);
+                    board = oneHumanTurn(board, teamTwo);
+                    printBoard(board);
                     freeCells--;
                     result = checkGameResult(board, freeCells);
                 }
@@ -119,6 +132,14 @@ public class TicTacToeHomework {
         System.out.println(result);
     }
 
+    public static int selectModeHumanComputer() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Select mode:\n1 - Light\n2 - Hard");
+        String s = scanner.nextLine();
+        int mode = Integer.valueOf(s);
+        return mode;
+    }
+
     public static String[][] initialiseBoard() {
         String[][] board = new String[3][3];
         for (int i = 0; i < 3; i++) {
@@ -136,9 +157,11 @@ public class TicTacToeHomework {
             }
             System.out.println();
         }
+        System.out.println();
+        System.out.println();
     }
 
-    public static void oneHumanTurn(String[][] board, String team) {
+    public static String[][] oneHumanTurn(String[][] board, String team) {
         Scanner scanner = new Scanner(System.in);
         boolean flag = true;
         while (flag) {
@@ -155,10 +178,10 @@ public class TicTacToeHomework {
                 System.out.println("This cell is occupied. Try another one.");
             }
         }
-        printBoard(board);
+        return board;
     }
 
-    public static void oneComputerRandomTurn(String[][] board, String team) {
+    public static String[][] oneComputerRandomTurn(String[][] board, String team) {
         Random random = new Random();
         int line;
         int column;
@@ -171,73 +194,113 @@ public class TicTacToeHomework {
                 flag = false;
             }
         }
-        printBoard(board);
+        return board;
+    }
+
+    public static String[][] oneComputerStrongTurn(String[][] board, String team) {
+        String[] boardLine = boardToLine(board);
+        boolean flag = true;
+        int lastUpdate;
+
+        for (int i = 0; i < 22; i = i + 3) {
+            if ((boardLine[i].equals(boardLine[i + 1]) && (isMine(boardLine[i], team) && (boardLine[i + 2].equals("-"))))){
+                boardLine[i + 2] = team;
+                lastUpdate = i + 2;
+                board = lineToBoard(boardLine, lastUpdate);
+                flag = false;
+                break;
+            } else if ((boardLine[i].equals(boardLine[i + 2]) && (isMine(boardLine[i], team) && (boardLine[i + 1].equals("-"))))){
+                boardLine[i + 1] = team;
+                lastUpdate = i + 1;
+                board = lineToBoard(boardLine, lastUpdate);
+                flag = false;
+                break;
+            } else if ((boardLine[i + 1].equals(boardLine[i + 2]) && (isMine(boardLine[i + 1], team) && (boardLine[i].equals("-"))))){
+                boardLine[i] = team;
+                lastUpdate = i;
+                board = lineToBoard(boardLine, lastUpdate);
+                flag = false;
+                break;
+            } else if ((boardLine[i].equals(boardLine[i + 1]) && (isNotMine(boardLine[i], team) && (boardLine[i + 2].equals("-"))))){
+                boardLine[i + 2] = team;
+                lastUpdate = i + 2;
+                board = lineToBoard(boardLine, lastUpdate);
+                flag = false;
+                break;
+            } else if ((boardLine[i].equals(boardLine[i + 2]) && (isNotMine(boardLine[i], team) && (boardLine[i + 1].equals("-"))))){
+                boardLine[i + 1] = team;
+                lastUpdate = i + 1;
+                board = lineToBoard(boardLine, lastUpdate);
+                flag = false;
+                break;
+            } else if ((boardLine[i + 1].equals(boardLine[i + 2]) && (isNotMine(boardLine[i + 1], team) && (boardLine[i].equals("-"))))){
+                boardLine[i] = team;
+                lastUpdate = i;
+                board = lineToBoard(boardLine, lastUpdate);
+                flag = false;
+                break;
+            }
+        }
+        if (flag) {
+            if (board[1][1].equals("-")) {
+                board[1][1] = team;
+            } else if (board[0][0].equals("-")) {
+                board[0][0] = team;
+            } else if (board[0][2].equals("-")) {
+                board[0][2] = team;
+            } else if (board[2][0].equals("-")) {
+                board[2][0] = team;
+            } else if (board[2][2].equals("-")) {
+                board[2][2] = team;
+            } else board = oneComputerRandomTurn(board, team);
+        }
+        return board;
+    }
+
+    public static String[][] oneComputerLightTurn(String[][] board, String team) {
+        String[] boardLine = boardToLine(board);
+        int[] notAllowed = new int[24];
+        int k = 0;
+        for (int i = 0; i < 22; i = i + 3) {
+            if ((boardLine[i].equals(boardLine[i + 1]) && (isMine(boardLine[i], team) && (boardLine[i + 2].equals("-"))))){
+                notAllowed[k] = i + 2;
+                k++;
+            } else if ((boardLine[i].equals(boardLine[i + 2]) && (isMine(boardLine[i], team) && (boardLine[i + 1].equals("-"))))){
+                notAllowed[k] = i + 1;
+                k++;
+            } else if ((boardLine[i + 1].equals(boardLine[i + 2]) && (isMine(boardLine[i], team) && (boardLine[i].equals("-"))))){
+                notAllowed[k] = i;
+                k++;
+            } else if ((boardLine[i].equals(boardLine[i + 1]) && (isNotMine(boardLine[i], team) && (boardLine[i + 2].equals("-"))))){
+                notAllowed[k] = i + 2;
+                k++;
+            } else if ((boardLine[i].equals(boardLine[i + 2]) && (isNotMine(boardLine[i], team) && (boardLine[i + 1].equals("-"))))){
+                notAllowed[k] = i + 1;
+                k++;
+            } else if ((boardLine[i + 1].equals(boardLine[i + 2]) && (isNotMine(boardLine[i], team) && (boardLine[i].equals("-"))))){
+                notAllowed[k] = i;
+                k++;
+            }
+        }
+
+        
+        return board;
     }
 
     public static boolean isNotMine(String cell, String myTeam) {
         boolean result;
-        if ((myTeam.equals("X")) && (cell.equals("X"))) {
-            result = false;
-        } else if ((myTeam.equals("X")) && (cell.equals("O"))) {
+        if (((myTeam.equals("X")) && (cell.equals("O"))) || ((myTeam.equals("O")) && (cell.equals("X")))) {
             result = true;
-        } else if ((myTeam.equals("0")) && (cell.equals("X"))) {
-            result = true;
-        } else if((myTeam.equals("0")) && (cell.equals("O"))) {
-            result = false;
         } else result = false;
             return result;
     }
 
-
-    public static void oneComputerStrongTurn(String[][] board, String team) {
-        int line;
-        int column;
-        String[] a = new String[9];
-        String[] b = new String[9];
-        int k = 0;
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                a[k] = board[i][j];
-                b[k] = board[j][i];
-                k++;
-            }
-        }
-        boolean flag = true;
-        while (flag) {
-
-                for (int i = 0; i < 7; i += 3) {
-                    if ((a[i].equals(a[i + 1])) && (isNotMine(a[i], team))) {
-                        a[i + 2] = team;
-                        flag = false;
-                        break;
-                    } else if ((a[i].equals(a[i + 2])) && (isNotMine(a[i], team))) {
-                        a[i + 1] = team;
-                        flag = false;
-                        break;
-                    } else if ((a[i + 1].equals(a[i + 2])) && (isNotMine(a[i + 1], team))) {
-                        a[i] = team;
-                        flag = false;
-                        break;
-                    } else if ((b[i].equals(b[i + 1])) && (isNotMine(b[i], team))) {
-                        b[i + 2] = team;
-                        flag = false;
-                        break;
-                    } else if ((b[i].equals(b[i + 2])) && (isNotMine(b[i], team))) {
-                        b[i + 1] = team;
-                        flag = false;
-                        break;
-                    } else if ((b[i + 1].equals(b[i + 2])) && (isNotMine(b[i + 1], team))) {
-                        b[i] = team;
-                        flag = false;
-                        break;
-                    }
-                }
-
-        }
-    }
-
-    public static void oneComputerLightTurn(String[][] board, String team) {
-
+    public static boolean isMine(String cell, String myTeam) {
+        boolean result;
+        if (((myTeam.equals("X")) && (cell.equals("X"))) || ((myTeam.equals("O")) && (cell.equals("O")))) {
+            result = true;
+        } else result = false;
+        return result;
     }
 
     public static int selectMode(){
@@ -248,83 +311,74 @@ public class TicTacToeHomework {
         return mode;
     }
 
-    public static String checkGameResult(String[][] board, int freeCells){
+    public static String checkGameResult(String[][] board, int freeCells) {
         String result = "";
+        String[] boardLine = boardToLine(board);
 
-        String[] a = new String[9];
-        String[] b = new String[9];
-        int k = 0;
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                a[k] = board[i][j];
-                b[k] = board[j][i];
-                k++;
-            }
-        }
-        for (int i = 0; i < 7; i += 3) {
-            if ((a[i].equals(a[i + 1])) && (a[i + 1].equals(a[i + 2])) && (a[i].equals("X") || a[i].equals("O"))) {
-                result = "Winner: " + a[i];
-                break;
-            } else if ((b[i].equals(b[i + 1])) && (b[i + 1].equals(b[i + 2])) && (b[i].equals("X") || b[i].equals("O"))) {
-                result = "Winner: " + b[i];
+        for (int i = 0; i < 22; i = i + 3) {
+            if ((boardLine[i].equals(boardLine[i + 1])) && (boardLine[i + 1].equals(boardLine[i + 2])) && (boardLine[i].equals("X") || boardLine[i].equals("O"))) {
+                result = "Winner: " + boardLine[i];
                 break;
             }
         }
-        if (result.equals("")) {
-            if (((a[0].equals(a[4]) && a[4].equals(a[8])) && (a[4].equals("X") || a[4].equals("O"))) || ((a[2].equals(a[4]) && a[4].equals(a[6]))) && (a[4].equals("X") || a[4].equals("O"))) {
-                result = "Winner: " + a[4];
-            }
-            else if (freeCells == 0) {
-                result = "No winner";
-            }
+        if ((freeCells == 0) && (result.equals(""))) {
+            result = "No winner.";
         }
         return result;
     }
 
-    public static String[] checkGameResultV2(String[][] board, int freeCells) {
-        String result="";
-        String[] lineOne = new String[3];
-        String[] lineTwo = new String[3];
-        String[] lineThree = new String[3];
-        String[] columnOne = new String[3];
-        String[] columnTwo = new String[3];
-        String[] columnThree = new String[3];
-        String[] diagonalOne = new String[3];
-        String[] diagonalTwo = new String[3];
-
-        String[] line = new String[24];
+    public static String[] boardToLine(String[][] board) {
+        String[] boardLine = new String[24];
         int k = 0;
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                line[k] = board[i][j];
-                k++;
-            }
-        }
+        int d = 18;
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                line[k] = board[j][i];
+                boardLine[k] = board[i][j];
+                boardLine[k + 9] = board[j][i];
                 k++;
             }
-        }
+            boardLine[d] = board[i][i];
+            boardLine[d + 3] = board[i][2 - i];
+            d++;
 
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                line[k] = board[i][i];
-                k++;
-            }
         }
-
-        for (int i = 0; i < 3; i++) {
-            for (int j = 3; j > 0; j--) {
-                line[k] = board[j][i];
-                k++;
-            }
-        }
-
-        return line;
+        return boardLine;
     }
 
-
-
+    public static String[][] lineToBoard (String[] line, int lastUpdate) {
+        String[][] board = new String[3][3];
+        int k = 0;
+        if (lastUpdate < 9) {
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    board[i][j] = line[k];
+                    k++;
+                }
+            }
+        }
+        else if (lastUpdate >= 9) {
+            k = 9;
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    board[j][i] = line[k];
+                    k++;
+                }
+            }
+        }
+        if ((lastUpdate >= 18) && (lastUpdate < 21)) {
+            k = 18;
+            for (int i = 0; i < 3; i++) {
+                board[i][i] = line[k];
+                k++;
+            }
+        } else if (lastUpdate >= 21){
+            k = 21;
+            for (int i = 0; i < 3; i++) {
+                board[i][2 - i] = line[k];
+                k++;
+            }
+        }
+        return board;
+    }
 }
