@@ -1,4 +1,4 @@
-package trello;
+package trello.pages;
 
 public class Pages {
 }

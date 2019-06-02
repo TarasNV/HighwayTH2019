@@ -3,6 +3,9 @@ package trello;
 import core.BrowserFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import trello.pages.DashboardPage;
+import trello.pages.LoggedOutPage;
+import trello.pages.LoginPage;
 
 public class LoginTest extends BrowserFactory {
 
