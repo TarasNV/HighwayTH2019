@@ -1,38 +1,48 @@
 package trello.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
-import static core.BrowserFactory.driver;
 
-public class LoginPage {
+public class LoginPage extends TrelloPageBase {
 
     private By emailField = By.cssSelector("#user");
     private By passwordField = By.cssSelector("#password");
-    private By loginButton = By.cssSelector("#login");
+    private By loginButton = By.xpath("//input[@id='login']");
+    WebDriverWait wait;
 
-    WebDriverWait wait = new WebDriverWait(driver, 10);
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
+        wait =  new WebDriverWait(driver, 10);
+        PageFactory.initElements(driver, this);
+    }
 
-    public void open() {
+    public LoginPage open() {
         driver.get("https://trello.com/login");
+        LoginPage loginPage = new LoginPage(driver);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(loginButton));
+        loginPage.isOpened();
+        return this;
+    }
+
+    public void isOpened() {
+        Assert.assertTrue(driver.findElement(loginButton).isDisplayed(), "Login page is not opened");
     }
 
     public DashboardPage login(String email, String password) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(loginButton));
         driver.findElement(emailField).clear();
         driver.findElement(emailField).sendKeys(email);
         driver.findElement(passwordField).clear();
         driver.findElement(passwordField).sendKeys(password);
         driver.findElement(loginButton).click();
-        //new WebDriverWait(driver, 10).until(ExpectedConditions.)
-        return new DashboardPage();
-    }
-
-    public boolean isOpened() {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(loginButton));
-        if (driver.getCurrentUrl().equals("Logged out of Trello"))
-            return true;
-        else
-            return false;
+        DashboardPage dashboardPage = new DashboardPage(driver);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[data-test-id = header-member-menu-button]")));
+        dashboardPage.isOpened();
+        return dashboardPage;
     }
 }

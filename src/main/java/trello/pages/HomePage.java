@@ -6,19 +6,19 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class LoggedOutPage extends TrelloPageBase {
-    private By loginButton = By.xpath("//a[@class='global-header-section-button']");
+public class HomePage extends TrelloPageBase {
+
+    private By boardsSidebarItem = By.xpath("//nav[@class='home-left-sidebar-container']//span[text()='Boards']");
     WebDriverWait wait;
 
-    public LoggedOutPage(WebDriver driver) {
+    public HomePage(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, 10);
         PageFactory.initElements(driver, this);
     }
 
-    public void isOpened() {
-        Assert.assertTrue(driver.findElement(loginButton).isDisplayed(), "Loggedout page is not opened");
+    public void isOpened(){
+        Assert.assertTrue(driver.findElement(boardsSidebarItem).isDisplayed(), "Home page is not opened");
     }
-
 
 }
