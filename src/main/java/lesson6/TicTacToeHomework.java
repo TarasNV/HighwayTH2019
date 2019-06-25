@@ -283,7 +283,7 @@ public class TicTacToeHomework {
             }
         }
 
-        
+
         return board;
     }
 

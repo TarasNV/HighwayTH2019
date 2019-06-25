@@ -1,4 +1,9 @@
 package lesson12;
 
-public class SearchForm {
+import java.util.List;
+
+public interface SearchForm {
+
+    String search();
+    List<String> search(String text);
 }

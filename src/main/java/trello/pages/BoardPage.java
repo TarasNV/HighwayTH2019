@@ -9,6 +9,8 @@ import org.testng.Assert;
 
 public class BoardPage extends TrelloPageBase {
     private By boardTitle = By.xpath("//span[@class='js-board-editing-target board-header-btn-text']");
+    private By btnPermissionLevel = By.cssSelector("#permission-level");
+
     WebDriverWait wait;
 
     public BoardPage(WebDriver driver) {
@@ -24,5 +26,31 @@ public class BoardPage extends TrelloPageBase {
 
     public String getBoardName() {
         return driver.findElement(By.xpath("//span[@class='js-board-editing-target board-header-btn-text']")).getText();
+    }
+
+    public String getBoardPermissionLevel(String boardId) {
+        return driver
+                .findElement(By.cssSelector("#permission-level .board-header-btn-text"))
+                .getText();
+    }
+
+    //TODO: complete method
+    public String getBoardId() {
+        String url = driver.getCurrentUrl();
+
+
+        return url;
+    }
+
+    public boolean isBoardPublic() {
+        if (driver.findElement(By.xpath("//span[@class='board-header-btn-text']")).getText().equals("Public"))
+            return true;
+        else return false;
+    }
+
+    public boolean isBoardPrivate() {
+        if (driver.findElement(By.xpath("//span[@class='board-header-btn-text']")).getText().equals("Private"))
+            return true;
+        else return false;
     }
 }

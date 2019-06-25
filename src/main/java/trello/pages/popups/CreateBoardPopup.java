@@ -13,6 +13,11 @@ public class CreateBoardPopup extends TrelloPageBase {
 
     private By inputBoardTitle = By.cssSelector("[placeholder = \"Add board title\"]");
     private By btnCreateBoard = By.cssSelector("[data-test-id = header-create-board-submit-button]");
+    private By btnDropdownPrivacy = By.xpath("//span[@name='private' or @name='public']/..");
+    private By btnPrivateOption = By.xpath("//li//span[@name='private']/../..");
+    private By btnPublicOption = By.xpath("//li//span[@name='public']/../..");
+    private By btnConfirmPublicBoard = By.xpath("//button[text()='Yes, Make Board Public']");
+
     WebDriverWait wait;
 
 
@@ -42,5 +47,22 @@ public class CreateBoardPopup extends TrelloPageBase {
         BoardPage boardPage = new BoardPage(driver);
         boardPage.isOpened();
         return boardPage;
+    }
+
+    public CreateBoardPopup selectPrivateOption() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(btnDropdownPrivacy));
+        driver.findElement(btnDropdownPrivacy).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(btnPrivateOption));
+        driver.findElement(btnPrivateOption).click();
+        return this;
+    }
+
+    public CreateBoardPopup selectPublicOption() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(btnDropdownPrivacy));
+        driver.findElement(btnDropdownPrivacy).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(btnPublicOption));
+        driver.findElement(btnPublicOption).click();
+        driver.findElement(btnConfirmPublicBoard).click();
+        return this;
     }
 }
