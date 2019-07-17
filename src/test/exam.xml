@@ -1,0 +1,50 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Exam suite" verbose="1">
+
+    <test name="Login">
+        <classes>
+            <class name="trello.LoginTest">
+                <methods>
+                    <include name="login"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Logout">
+        <classes>
+            <class name="trello.LoginTest">
+                <methods>
+                    <include name="logout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="CreateList">
+        <classes>
+            <class name="trello.ListTests">
+                <methods>
+                    <include name="createListTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="CopyList">
+        <classes>
+            <class name="trello.ListTests">
+                <methods>
+                    <include name="copyListTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="DeleteList">
+        <classes>
+            <class name="trello.ListTests">
+                <methods>
+                    <include name="deleteListTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
